@@ -1,0 +1,21 @@
+# KiCad auto-backups and caches
+*-backups/
+fp-info-cache
+_autosave-*
+*.bak
+*-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# KiCad per-user local state (not shared)
+*.kicad_prl
+
+# KiCad session locks
+*.lck
+
+# Fabrication Toolkit output, regenerated from the board
+production/
+
+# Editor / OS
+.history/
+.DS_Store

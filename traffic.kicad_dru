@@ -1,0 +1,29 @@
+(version 1)
+
+(rule "HV to LV"
+	(condition "A.hasNetclass('HV') && !B.hasNetclass('HV')")
+	(constraint clearance (min 7mm)))
+
+(rule "HV to HV"
+	(condition "A.hasNetclass('HV') && B.hasNetclass('HV') && A.Net != B.Net")
+	(constraint clearance (min 2.5mm)))
+
+(rule "Terminal pin spacing"
+	(condition "A.hasNetclass('HV') && B.hasNetclass('HV') && ((A.intersectsCourtyard('J1') && B.memberOfFootprint('J1')) || (A.intersectsCourtyard('J3') && B.memberOfFootprint('J3')) || (A.intersectsCourtyard('J4') && B.memberOfFootprint('J4')) || (A.intersectsCourtyard('J5') && B.memberOfFootprint('J5')))")
+	(constraint clearance (min 2.4mm)))
+
+(rule "DPAK pin spacing"
+	(condition "A.hasNetclass('HV') && B.hasNetclass('HV') && ((A.intersectsCourtyard('D5') && B.memberOfFootprint('D5')) || (A.intersectsCourtyard('D7') && B.memberOfFootprint('D7')) || (A.intersectsCourtyard('D9') && B.memberOfFootprint('D9')))")
+	(constraint clearance (min 1.9mm)))
+
+(rule "Opto pin spacing"
+	(condition "A.hasNetclass('HV') && B.hasNetclass('HV') && ((A.intersectsCourtyard('U4') && B.memberOfFootprint('U4')) || (A.intersectsCourtyard('U5') && B.memberOfFootprint('U5')) || (A.intersectsCourtyard('U6') && B.memberOfFootprint('U6')))")
+	(constraint clearance (min 0.7mm)))
+
+(rule "Opto barrier, package limit"
+	(condition "A.hasNetclass('HV') != B.hasNetclass('HV') && ((A.intersectsCourtyard('U4') && B.memberOfFootprint('U4')) || (A.intersectsCourtyard('U5') && B.memberOfFootprint('U5')) || (A.intersectsCourtyard('U6') && B.memberOfFootprint('U6')))")
+	(constraint clearance (min 5.6mm)))
+
+(rule "Low-voltage pairs on the mains side"
+	(condition "(A.NetName == 'Net-(D5-G)' && B.NetName == 'Net-(D5-A1)') || (A.NetName == 'Net-(D5-A1)' && B.NetName == 'Net-(D5-G)') || (A.NetName == 'Net-(R4-Pad1)' && B.NetName == 'Net-(D5-A2)') || (A.NetName == 'Net-(D5-A2)' && B.NetName == 'Net-(R4-Pad1)') || (A.NetName == 'Net-(D7-G)' && B.NetName == 'Net-(D7-A1)') || (A.NetName == 'Net-(D7-A1)' && B.NetName == 'Net-(D7-G)') || (A.NetName == 'Net-(R12-Pad1)' && B.NetName == 'Net-(D7-A2)') || (A.NetName == 'Net-(D7-A2)' && B.NetName == 'Net-(R12-Pad1)') || (A.NetName == 'Net-(D9-G)' && B.NetName == 'Net-(D9-A1)') || (A.NetName == 'Net-(D9-A1)' && B.NetName == 'Net-(D9-G)') || (A.NetName == 'Net-(R17-Pad1)' && B.NetName == 'Net-(D9-A2)') || (A.NetName == 'Net-(D9-A2)' && B.NetName == 'Net-(R17-Pad1)')")
+	(constraint clearance (min 0.2mm)))
