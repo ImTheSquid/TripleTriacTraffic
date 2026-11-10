@@ -2979,6 +2979,223 @@
 			)
 			(embedded_fonts no)
 		)
+	(symbol "Device:Varistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor"
+				(at -3.175 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Voltage dependent resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Varistor_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_0_1"
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_Espressif:ESP32-S3-WROOM-1"
 			(pin_names
 				(offset 1.016)
@@ -5926,16 +6143,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 22.86) (xy 213.36 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a4e3416-7be4-44b9-9a88-103edb2bec20")
-	)
-	(wire
-		(pts
 			(xy 237.49 21.59) (xy 241.3 21.59)
 		)
 		(stroke
@@ -6003,16 +6210,6 @@
 			(type default)
 		)
 		(uuid "1437cfda-adc7-4f53-b924-a05b41c69b01")
-	)
-	(wire
-		(pts
-			(xy 210.82 55.88) (xy 213.36 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1445dc35-d6c6-4342-b0ce-fbe5639aa635")
 	)
 	(wire
 		(pts
@@ -6373,16 +6570,6 @@
 			(type default)
 		)
 		(uuid "80539250-e299-4e29-99be-a85470455323")
-	)
-	(wire
-		(pts
-			(xy 210.82 88.9) (xy 213.36 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8177c300-fe35-41f2-ba63-ffaa18a7d24f")
 	)
 	(wire
 		(pts
@@ -8290,7 +8477,7 @@
 				)
 			)
 		)
-		(property "Value" "T2A"
+		(property "Value" "F2A"
 			(at 252.73 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8925,7 +9112,7 @@
 				)
 			)
 		)
-		(property "Value" "T2A"
+		(property "Value" "F2A"
 			(at 252.73 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9255,7 +9442,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF"
+		(property "Value" "100uF"
 			(at 83.82 28.3209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10704,25 +10891,23 @@
 		(fields_autoplaced yes)
 		(uuid "5c97b046-d137-43a2-8940-3eb9cceb4280")
 		(property "Reference" "D7"
-			(at 245.11 57.7214 0)
+			(at 242.57 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ACST210-8B"
-			(at 245.11 60.2614 0)
+		(property "Value" "T810-800B"
+			(at 242.57 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
@@ -10789,7 +10974,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ce6672e-9a76-49d8-a2cd-17d4bd0441bc")
 		(property "Reference" "D4"
-			(at 208.5975 15.24 0)
+			(at 205.74 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10799,7 +10984,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 17.78 0)
+			(at 205.74 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11480,7 +11665,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d0092f0-292b-4aad-b365-f6e84c4d7b8c")
 		(property "Reference" "D6"
-			(at 208.5975 48.26 0)
+			(at 205.74 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11490,7 +11675,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 50.8 0)
+			(at 205.74 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11921,25 +12106,23 @@
 		(fields_autoplaced yes)
 		(uuid "8c955001-385f-4f1c-8959-39b0168f3120")
 		(property "Reference" "D5"
-			(at 245.11 24.7014 0)
+			(at 242.57 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ACST210-8B"
-			(at 245.11 27.2414 0)
+		(property "Value" "T810-800B"
+			(at 242.57 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
@@ -12332,7 +12515,7 @@
 		(fields_autoplaced yes)
 		(uuid "9279d0f9-f08a-471d-8647-af12c089541f")
 		(property "Reference" "D8"
-			(at 208.5975 81.28 0)
+			(at 205.74 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12342,7 +12525,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 83.82 0)
+			(at 205.74 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12936,7 +13119,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002"
+		(property "Value" "AO3400A"
 			(at 215.9 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12960,7 +13143,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a"
 			(at 214.63 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12972,7 +13155,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "5.7A Id, 30V Vds, logic-level N-Channel MOSFET, SOT-23"
 			(at 209.55 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -13103,7 +13286,7 @@
 				)
 			)
 		)
-		(property "Value" "T2A"
+		(property "Value" "F2A"
 			(at 252.73 17.78 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13766,7 +13949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002"
+		(property "Value" "AO3400A"
 			(at 215.9 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13790,7 +13973,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a"
 			(at 214.63 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -13802,7 +13985,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "5.7A Id, 30V Vds, logic-level N-Channel MOSFET, SOT-23"
 			(at 209.55 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -13854,7 +14037,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002"
+		(property "Value" "AO3400A"
 			(at 215.9 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13878,7 +14061,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a"
 			(at 214.63 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13890,7 +14073,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "5.7A Id, 30V Vds, logic-level N-Channel MOSFET, SOT-23"
 			(at 209.55 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -13943,7 +14126,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 40.64 34.29 0)
+			(at 36.83 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14416,25 +14599,23 @@
 		(fields_autoplaced yes)
 		(uuid "e98e8578-c59b-477a-82e1-39ab603b3818")
 		(property "Reference" "D9"
-			(at 245.11 90.7414 0)
+			(at 242.57 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ACST210-8B"
-			(at 245.11 93.2814 0)
+		(property "Value" "T810-800B"
+			(at 242.57 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
@@ -14886,6 +15067,1026 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 213.36 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0523a460-827a-43b3-bdaa-fcbd45cc26ea")
+		(property "Reference" "R18"
+			(at 211.582 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330"
+			(at 211.582 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 211.582 19.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72aa856f-0830-4430-b69e-0544a3afa024")
+		)
+		(pin "2"
+			(uuid "936e27ea-f30b-49d7-90f1-2b94d08a7c0a")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 213.36 15.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a725b899-9f02-4861-938e-a373e48104cd")
+		(property "Reference" "#PWR027"
+			(at 209.55 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 217.17 15.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 213.36 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66b58366-0f56-4586-a2cd-a3eafb9a45b9")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 210.82 22.86) (xy 210.82 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b4adce-19f9-48a0-bf2d-e7437c033803")
+	)
+	(wire
+		(pts
+			(xy 210.82 27.94) (xy 212.09 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a709074-90f3-4afb-844b-f7d19ba95791")
+	)
+	(junction
+		(at 212.09 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b1ae0d2-bb70-4cb5-ace6-e96e589b3ed0")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 213.36 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07dc292e-8e49-4d27-9fa3-69235dd86eef")
+		(property "Reference" "R19"
+			(at 211.582 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330"
+			(at 211.582 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 211.582 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9934c91e-90fc-4c33-8e8d-5ddbf5af065d")
+		)
+		(pin "2"
+			(uuid "d3a6868c-64a5-4c55-9e2b-2cf9ab5fea99")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 213.36 48.26 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e533cdda-cd3b-4d24-93f0-f514d0e8b6bc")
+		(property "Reference" "#PWR028"
+			(at 209.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 217.17 48.2599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e22dccb-d1e4-471b-8777-a529b48dec8f")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 210.82 55.88) (xy 210.82 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7f62fcb-f8aa-4493-b243-0b8dfaeae3c4")
+	)
+	(wire
+		(pts
+			(xy 210.82 60.96) (xy 212.09 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "738ee753-02c3-4667-8ca0-368734697073")
+	)
+	(junction
+		(at 212.09 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec992f5a-a382-4c27-9bdd-ad3c6e2a52bd")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 213.36 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "820d9ccc-a8f3-4793-80bc-b0586b9c0f0a")
+		(property "Reference" "R20"
+			(at 211.582 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330"
+			(at 211.582 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 211.582 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33458694-b044-4617-bcec-fb4633ba790d")
+		)
+		(pin "2"
+			(uuid "8d352ed0-8a11-45fa-a5d9-3fd7ab516aed")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 213.36 81.28 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abaa6efd-eb32-4462-b44f-fe48a9a39f93")
+		(property "Reference" "#PWR029"
+			(at 209.55 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 217.17 81.2799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 213.36 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fcc9efb-17ba-4280-abce-cac000dda527")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 210.82 88.9) (xy 210.82 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b973702-a0a4-4d54-bec8-3bd6d940176c")
+	)
+	(wire
+		(pts
+			(xy 210.82 93.98) (xy 212.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b952480e-7ff4-4d5b-af29-b0fd65871b8e")
+	)
+	(junction
+		(at 212.09 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24934a13-5376-4069-99ff-3477661615e0")
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 246.38 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e050a3fa-0eff-43df-b9a7-525881b7ead2")
+		(property "Reference" "RV1"
+			(at 248.92 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S07K275"
+			(at 248.92 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D7mm_W4.5mm_P5mm"
+			(at 244.602 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage dependent resistor"
+			(at 246.38 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de9fd64d-42f1-43cf-89af-296bc43bc3c5")
+		)
+		(pin "2"
+			(uuid "db1851eb-14ec-4785-9a58-604630f836e0")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 246.38 24.13) (xy 246.38 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f92f7dac-5f09-40d7-8dd5-0819abca559f")
+	)
+	(junction
+		(at 246.38 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0067c7a-d44d-401a-9b37-4e1d9a559810")
+	)
+	(wire
+		(pts
+			(xy 246.38 31.75) (xy 246.38 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b79a89e4-1ed1-4584-86cd-d20bc80bf8aa")
+	)
+	(junction
+		(at 246.38 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42bd7064-2803-4fa0-a826-dcf7d654b2a6")
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 246.38 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "260d48cf-0702-4c42-b221-e913451a6941")
+		(property "Reference" "RV2"
+			(at 248.92 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S07K275"
+			(at 248.92 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D7mm_W4.5mm_P5mm"
+			(at 244.602 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage dependent resistor"
+			(at 246.38 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0ecd251-124b-43fe-b3e3-1e415280dade")
+		)
+		(pin "2"
+			(uuid "b47b5d71-f34d-4394-ba18-98a533818444")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 246.38 57.15) (xy 246.38 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f09753-be8c-4137-8f8a-2006448ecc4f")
+	)
+	(junction
+		(at 246.38 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6211206a-11f4-41cc-9648-87d9edd9dfb4")
+	)
+	(wire
+		(pts
+			(xy 246.38 64.77) (xy 246.38 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d4d4d8-7910-48af-bc66-c976cd23d330")
+	)
+	(junction
+		(at 246.38 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "445513fd-4b28-40a8-821d-a16082635171")
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 246.38 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa336f5d-afff-426f-88fd-4c2a3b32e52a")
+		(property "Reference" "RV3"
+			(at 248.92 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S07K275"
+			(at 248.92 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D7mm_W4.5mm_P5mm"
+			(at 244.602 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage dependent resistor"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0aad5f88-caf2-40e5-8ea6-218175304bb3")
+		)
+		(pin "2"
+			(uuid "cb03d197-e80c-490f-ae44-af3c9d3fa2ae")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 246.38 90.17) (xy 246.38 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25e96301-136a-4f77-acd8-046b6b09de04")
+	)
+	(junction
+		(at 246.38 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "307b9b18-5bb7-419f-be4b-ae2741c36b2c")
+	)
+	(wire
+		(pts
+			(xy 246.38 97.79) (xy 246.38 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a6312e3-3671-4f4e-bc54-7c6b711f8408")
+	)
+	(junction
+		(at 246.38 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5e2df1e-7057-488c-bf3b-f9e7a58ae19d")
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 41.91 38.1 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "109f1a26-dc31-46e1-ba16-a2d822dcfb35")
+		(property "Reference" "RV4"
+			(at 44.45 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S07K275"
+			(at 44.45 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D7mm_W4.5mm_P5mm"
+			(at 43.688 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage dependent resistor"
+			(at 41.91 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bd8d0b5-4906-46ed-82db-5c68672ecf12")
+		)
+		(pin "2"
+			(uuid "4d166e66-b9fd-4b74-ab1b-a58830f437e8")
+		)
+		(instances
+			(project "traffic"
+				(path "/3cfe36af-946f-429b-a65d-8735fbb8150c"
+					(reference "RV4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.91 34.29) (xy 41.91 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62fa0cbf-8315-4867-99ad-72a45cbfd027")
+	)
+	(junction
+		(at 41.91 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "605d8001-3593-443a-8682-de8732710941")
+	)
+	(wire
+		(pts
+			(xy 41.91 41.91) (xy 31.75 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ce8ddcb-f1d3-4793-a085-22e79340c281")
+	)
+	(wire
+		(pts
+			(xy 31.75 41.91) (xy 31.75 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f0f2bd7-a9b3-4969-816b-6101b42cc04e")
+	)
+	(junction
+		(at 31.75 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12bc3220-5478-4e94-b86a-160026ca10e5")
 	)
 	(sheet_instances
 		(path "/"
