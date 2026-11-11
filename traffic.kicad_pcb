@@ -1251,7 +1251,7 @@
 		(descr "6-lead surface-mounted (SMD) DIP package, row spacing 7.62mm (300 mils)")
 		(tags "SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U4"
-			(at 0 -4.87 90)
+			(at -2.961 -5.758 180)
 			(layer "F.SilkS")
 			(uuid "72f553cc-1072-4b09-b370-a522b4bc32a7")
 			(effects
@@ -7929,7 +7929,7 @@
 		(descr "6-lead surface-mounted (SMD) DIP package, row spacing 7.62mm (300 mils)")
 		(tags "SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U5"
-			(at 0 -4.87 90)
+			(at -2.961 -5.784 180)
 			(layer "F.SilkS")
 			(uuid "ad7252b3-3622-44a1-af5f-60445ffee072")
 			(effects
@@ -8889,7 +8889,7 @@
 		(descr "6-lead surface-mounted (SMD) DIP package, row spacing 7.62mm (300 mils)")
 		(tags "SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U6"
-			(at 0 -4.87 90)
+			(at -2.96 -5.56 180)
 			(layer "F.SilkS")
 			(uuid "0d9190c5-449e-4aaa-9d2a-b7a5b71ecdce")
 			(effects
@@ -16003,6 +16003,39 @@
 		(fill hatch)
 		(layer "F.SilkS")
 		(uuid "97566e38-22ad-4875-915c-1b61ab1a1edc")
+	)
+	(gr_circle
+		(center 57.8 143.186447)
+		(end 57.9 143.236447)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5b4ee7f1-49d6-40ad-80a1-d2d900dea504")
+	)
+	(gr_circle
+		(center 80.75 143.186447)
+		(end 80.85 143.236447)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "d0ac4df3-12c8-40cd-8edc-5923b63c4fb8")
+	)
+	(gr_circle
+		(center 103.65 143.186447)
+		(end 103.75 143.236447)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "60d7d5c4-4ef9-4982-bc50-8d483e7db308")
 	)
 	(gr_line
 		(start 109.109197 156.062319)
